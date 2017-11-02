@@ -25,7 +25,7 @@ let client = (replyToken, SendMessageObject) => {
 const server = new Hapi.Server();
 server.connection({
     host: 'localhost',
-    port: 8000
+    port: process.env.PORT
 });
 
 server.route({
